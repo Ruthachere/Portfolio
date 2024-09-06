@@ -13,7 +13,7 @@ body {
   
 }
 main{
-   background:transparent url('../images/Background1.png');
+   background: transparent url('../images/Background1.png');
    width: 100%; 
 }
 nav {
@@ -149,6 +149,7 @@ li a {
   color: var(--text-color);
 }
 .image-one {
+  background-color: var(--bg-color-one);
   width: 70%;
   height: 100%;
   border: 1px solid rgba(240, 239, 239, 0.996);
