@@ -7,11 +7,13 @@ body {
   --bg-color-one: #fff;
   --bg-color-two: #132238;
   --text-color: #556070;
-
-  box-sizing: border-box;
-  margin: auto;
-  font-family: "Work Sans", sans-serif;
+   box-sizing: border-box;
+   margin: auto;
+   font-family: "Work Sans", sans-serif;
+   background:transparent url('../images/Background.png');
+   width: 100%; 
 }
+
 nav {
   background-color: var(--bg-color-one);
   padding: 0 112px;
@@ -105,7 +107,7 @@ li a {
 }
 .content-one p span {
   text-decoration: underline;
-  text-decoration-line: line-through;
+  text-decoration-line: underline ;
   text-decoration-color: red;
 }
 .hello-btn {
@@ -370,7 +372,7 @@ li a {
   align-items: center;
   justify-content: center;
 }
-.content-five h3 {
+.content-five h3, .clients-content h3 {
   margin: 0;
   font-size: 28px;
   line-height: 36px;
@@ -401,7 +403,7 @@ li a {
 .grid-two {
   background-color: var(--bg-color-one);
   gap: 10px 0px;
-  width: 90%;
+  width: 87%;
   padding: 28px;
   border: 2px solid whitesmoke;
   border-radius: 6px;
@@ -426,18 +428,48 @@ li a {
   flex-direction: column;
   gap: 20px;
 }
+
+.Clients{
+  margin:  auto 112px;
+}
 .clients-container {
-  background-color: white;
+  gap: 60px 0px;
+  display: flex;
+  padding: 96px 0px;
+  flex-direction: column;
+
+}
+.clients-content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+.logo-slides{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+
+.logo-image{
+  width: 100px;
+  height: 50px;
 }
 .testimonials-container h3,
 .clients-container h3 {
   color: #132238;
 }
+
+
+
 .testimonials-container {
   display: flex;
   flex-direction: column;
   gap: 48px 0px;
-  background-color: white;
+  padding: 12px 0px 40px 0px;
+  background-color: transparent;
 }
 .testimonials-container .content-five {
   padding: 12px;
