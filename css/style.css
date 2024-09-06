@@ -10,10 +10,12 @@ body {
    box-sizing: border-box;
    margin: auto;
    font-family: "Work Sans", sans-serif;
-   background:transparent url('../images/Background.png');
+  
+}
+main{
+   background:transparent url('../images/Background1.png');
    width: 100%; 
 }
-
 nav {
   background-color: var(--bg-color-one);
   padding: 0 112px;
