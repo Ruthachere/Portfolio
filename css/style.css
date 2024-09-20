@@ -11,10 +11,10 @@ body {
   margin: auto;
   font-family: "Work Sans", sans-serif;
 }
-main {
+/* main {
   background: url("../images/Background1.png");
-  width: 100%;
-}
+  width: 100vw
+} */
 nav {
   background-color: var(--bg-color-one);
   padding: 0 112px;
