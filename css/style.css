@@ -7,14 +7,13 @@ body {
   --bg-color-one: #fff;
   --bg-color-two: #132238;
   --text-color: #556070;
-   box-sizing: border-box;
-   margin: auto;
-   font-family: "Work Sans", sans-serif;
-  
+  box-sizing: border-box;
+  margin: auto;
+  font-family: "Work Sans", sans-serif;
 }
-main{
-   background: transparent url('../images/Background1.png');
-   width: 100%; 
+main {
+  background: url("../images/Background1.png");
+  width: 100%;
 }
 nav {
   background-color: var(--bg-color-one);
@@ -109,7 +108,7 @@ li a {
 }
 .content-one p span {
   text-decoration: underline;
-  text-decoration-line: underline ;
+  text-decoration-line: underline;
   text-decoration-color: red;
 }
 .hello-btn {
@@ -175,17 +174,17 @@ li a {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   align-items: center;
 }
-.icons{
+.icons {
   border: 2px solid rgba(246, 242, 242, 0.877);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   background-color: var(--bg-color-one);
-    position: relative;
-    bottom: 29px;
-    margin: auto;
-    width: 56%;
-    padding: 12px;
+  position: relative;
+  bottom: 29px;
+  margin: auto;
+  width: 56%;
+  padding: 12px;
 }
-.img-content{
+.img-content {
   width: 70%;
 }
 
@@ -277,6 +276,7 @@ li a {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  border: none;
 }
 .icon i {
   font-size: 20px;
@@ -336,7 +336,7 @@ li a {
   gap: 10px 0px;
   padding: 28px;
 }
-.study-btn {
+.study_btn {
   width: 38%;
   padding: 12px;
   border: 1px solid var(---primary-color);
@@ -350,7 +350,7 @@ li a {
   align-items: center;
   text-align: center;
 }
-.study-btn i,
+.study_btn i,
 .work-btn i {
   padding-left: 12px;
 }
@@ -375,7 +375,8 @@ li a {
   align-items: center;
   justify-content: center;
 }
-.content-five h3, .clients-content h3 {
+.content-five h3,
+.clients-content h3 {
   margin: 0;
   font-size: 28px;
   line-height: 36px;
@@ -432,23 +433,22 @@ li a {
   gap: 20px;
 }
 
-.Clients{
-  margin:  auto 112px;
+.Clients {
+  margin: auto 112px;
 }
 .clients-container {
   gap: 60px 0px;
   display: flex;
   padding: 96px 0px;
   flex-direction: column;
-
 }
-.clients-content{
+.clients-content {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 20px 0px;
 }
-.logo-slides{
+.logo-slides {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -456,7 +456,7 @@ li a {
   margin: auto;
 }
 
-.logo-image{
+.logo-image {
   width: 100px;
   height: 50px;
 }
@@ -464,8 +464,6 @@ li a {
 .clients-container h3 {
   color: #132238;
 }
-
-
 
 .testimonials-container {
   display: flex;
@@ -528,7 +526,8 @@ h6 {
   display: flex;
   justify-content: center;
 }
-.facebook, .icons .fa-linkedin-in{
+.facebook,
+.icons .fa-linkedin-in {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
   background-color: var(---primary-color);
   color: var(--bg-color-one);
@@ -540,8 +539,8 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-.personal-content{
-   width: 60%;
+.personal-content {
+  width: 60%;
 }
 .grid-three {
   display: flex;
@@ -578,6 +577,13 @@ input {
   border: none;
   border-bottom: 2px solid #e6e8eb;
 }
+input:focus{
+  outline: none;
+   border-bottom: 1px solid var(--text-color);
+}
+input:hover{
+  border-bottom: 2px solid var(---primary-color);
+}
 .name-input {
   border: none;
   border-bottom: 2px solid var(---primary-color);
@@ -593,11 +599,11 @@ input::placeholder {
   display: flex;
 }
 .budget-input {
-  width: 30%;
+  width: 90%;
 }
 .subject-input {
-  width: 60%;
-  margin-left: 12px;
+  width: 100%;
+  margin-left: 32px;
 }
 .submit-btn {
   margin: 12px 0px;
@@ -626,4 +632,59 @@ input::placeholder {
 .footer-elements span {
   color: var(--bg-color-one);
   margin: 0;
+}
+button {
+  cursor: pointer;
+}
+.modal-box h2{
+  margin: 0;
+}
+
+.modal-box {
+  width: 30%;
+  margin: auto;
+  display: none;
+  flex-direction: column;
+  gap: 8px 0px;
+  background-color: var(--bg-color-one);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  position: absolute;
+  right: 30%;
+}
+.delete-icon {
+  display: flex;
+  justify-content: center;
+  color: var(---primary-color);
+  border: 2px solid var(---primary-color);
+  background-color: none;
+  border-radius: 4px;
+  width: 36px;
+  padding: 8px;
+  align-items: center;
+  float: right;
+  font-size: 18px;
+}
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#modal-text{
+    font-family: inherit;
+    color: var(--text-color);
+  margin: 0;
+}
+
+
+.error{
+  color: red;
+  font-size: 15px;
+  margin: 0;
+}
+.input-field, .email-field, .location-field, .budget-field, .subject-field , .message-field{
+  display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

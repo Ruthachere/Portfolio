@@ -36,7 +36,26 @@
 
     <main>
       <section class="main">
-        <!-- First container containing person description -->
+        <!-- <div class="modal">
+          <div class="modal-box">
+            <button aria-label="delete" class="delete-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-content">
+              <h2>Project details</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                perferendis itaque fugit eligendi obcaecati aliquid distinctio
+                est maiores sed saepe! A aspernatur quibusdam ad, quo nisi
+                impedit eligendi totam beatae blanditiis aut? Natus vero amet
+                debitis ex, iusto architecto voluptate!
+              </p>
+            </div>
+
+            <button aria-label="okay" class="okay-btn">Okay</button>
+          </div>
+        </div> -->
         <div class="container-one">
           <div class="grid-item-one">
             <div class="content-one">
@@ -144,7 +163,7 @@
             <div class="content-three">
               <div class="grid-item-three">
                 <div class="icon icon-one">
-                 <i class="fa-regular fa-clipboard"></i>
+                  <i class="fa-regular fa-clipboard"></i>
                 </div>
                 <h4>1. Research</h4>
                 <p>
@@ -177,7 +196,7 @@
 
               <div class="grid-item-three one">
                 <div class="icon">
-                 <i class="fa-solid fa-laptop"></i>
+                  <i class="fa-solid fa-laptop"></i>
                 </div>
                 <h4>4. Launch</h4>
                 <p>
@@ -186,6 +205,21 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="modal-box" id="modal-box">
+          <div class="delete">
+            <button aria-label="delete" class="delete-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="modal-content">
+            <h2>Project Details</h2>
+            <p id="modal-text"></p>
           </div>
         </div>
       </section>
@@ -212,12 +246,44 @@
               <div class="content-one">
                 <small>UI-UX DESIGN</small>
                 <h3>Product Admin Dashboard</h3>
-                <p>
+                <p id="text">
                   Vivamus eleifend convallis ante, non pharetra libero molestie
                   laoreet. Donec id imperdiet lacus.
                 </p>
 
-                <button class="study-btn">
+                <button
+                  data-content="
+                  Lorem, ipsum dolor sit amet
+                   consectetur adipisicing elit. Iure vel minima exercitationem,non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus."
+                  class="study_btn"
+                  id="study_btn"
+                >
+                  Case Study <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid-one">
+              <img
+                src="https://media.istockphoto.com/id/513303642/photo/abstract-background.jpg?s=1024x1024&w=is&k=20&c=X6MjdgxZ5dCmi4ztZybpQ3WbF8622QfD8OqFZaOv9lw="
+                alt=""
+                class="image-three"
+              />
+              <div class="content-one">
+                <small>UI-UX DESIGN</small>
+                <h3>Product Admin Dashboard</h3>
+                <p>
+                  Vivamus eleifend convallis ante, non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus. 
+                </p>
+
+                <button
+                  data-content="Vivamus eleifend convallis ante, non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repudiandae?"
+                  class="study_btn"
+                  id="study_btn"
+                >
                   Case Study <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -237,7 +303,12 @@
                   laoreet. Donec id imperdiet lacus.
                 </p>
 
-                <button class="study-btn">
+                <button
+                  data-content="Vivamus eleifend convallis ante, non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus."
+                  class="study_btn"
+                  id="study_btn"
+                >
                   Case Study <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -257,7 +328,12 @@
                   laoreet. Donec id imperdiet lacus.
                 </p>
 
-                <button class="study-btn">
+                <button
+                  data-content="Vivamus eleifend convallis ante, non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus."
+                  class="study_btn"
+                  id="study_btn"
+                >
                   Case Study <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -277,7 +353,12 @@
                   laoreet. Donec id imperdiet lacus.
                 </p>
 
-                <button class="study-btn">
+                <button
+                  data-content="Vivamus eleifend convallis ante, non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus."
+                  class="study_btn"
+                  id="study_btn"
+                >
                   Case Study <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -297,27 +378,12 @@
                   laoreet. Donec id imperdiet lacus.
                 </p>
 
-                <button class="study-btn">
-                  Case Study <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="grid-one">
-              <img
-                src="https://media.istockphoto.com/id/513303642/photo/abstract-background.jpg?s=1024x1024&w=is&k=20&c=X6MjdgxZ5dCmi4ztZybpQ3WbF8622QfD8OqFZaOv9lw="
-                alt=""
-                class="image-three"
-              />
-              <div class="content-one">
-                <small>UI-UX DESIGN</small>
-                <h3>Product Admin Dashboard</h3>
-                <p>
-                  Vivamus eleifend convallis ante, non pharetra libero molestie
-                  laoreet. Donec id imperdiet lacus.
-                </p>
-
-                <button class="study-btn">
+                <button
+                  data-content="Vivamus eleifend convallis ante, non pharetra libero molestie
+                  laoreet. Donec id imperdiet lacus."
+                  class="study_btn"
+                  id="study_btn"
+                >
                   Case Study <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -464,29 +530,28 @@
       <!-- Section containing details from happy clients -->
       <section>
         <div class="Clients">
-        <div class="clients-container">
-          <div class="clients-content">
-            <h3>Happy Clients</h3>
+          <div class="clients-container">
+            <div class="clients-content">
+              <h3>Happy Clients</h3>
 
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              <br />
-              but the majority have suffered alteration.
-            </p>
-          </div>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                <br />
+                but the majority have suffered alteration.
+              </p>
+            </div>
 
-          <div class="logo-slides">
-            <img src="images/google.png" alt="" class="logo-image" />
-            <img src="images/dribbble.png" alt="" class="logo-image" />
-            <img src="images/linked-2.png" alt="" class="logo-image" />
-            <img src="images/amazon.png" alt="" class="logo-image" />
-            <img src="images/meduim.jpeg" alt="" class="logo-image" />
-            <img src="images/spotify.png" alt="" class="logo-image" />
+            <div class="logo-slides">
+              <img src="images/google.png" alt="" class="logo-image" />
+              <img src="images/dribbble.png" alt="" class="logo-image" />
+              <img src="images/linked-2.png" alt="" class="logo-image" />
+              <img src="images/amazon.png" alt="" class="logo-image" />
+              <img src="images/meduim.jpeg" alt="" class="logo-image" />
+              <img src="images/spotify.png" alt="" class="logo-image" />
+            </div>
           </div>
-        </div>
         </div>
       </section>
-
 
       <!-- Section for Testimonials -->
       <section>
@@ -533,9 +598,9 @@
               <!-- container containing contact details -->
               <div class="grid-container-two personal-content">
                 <div class="grid-two content-one grid-three">
-                  <div class="icon icon-one">
+                  <but class="icon icon-one">
                     <i class="fa-solid fa-location-dot"></i>
-                  </div>
+                  </but>
                   <div class="content-one">
                     <small>Address:</small>
                     <h6>New Mexico 31134</h6>
@@ -543,9 +608,9 @@
                 </div>
 
                 <div class="grid-two content-one grid-three inactive">
-                  <div class="icon">
+                  <but class="icon">
                     <i class="fa-solid fa-location-dot"></i>
-                  </div>
+                  </but>
                   <div class="content-one">
                     <small>My Email:</small>
                     <h6>mymail@gmail.com</h6>
@@ -553,9 +618,9 @@
                 </div>
 
                 <div class="grid-two content-one grid-three inactive">
-                  <div class="icon">
+                  <but class="icon">
                     <i class="fa-solid fa-location-dot"></i>
-                  </div>
+                  </but>
                   <div class="content-one">
                     <small>Call Me Now:</small>
                     <h6>676-800-387</h6>
@@ -581,32 +646,62 @@
                 but the majority have suffered alteration.
               </p>
 
-              <form action="#">
-                <input type="text" placeholder="Name*" class="name-input" />
-                <input type="email" placeholder="Email*" class="email-input" />
-                <input
-                  type="text"
-                  placeholder="Location*"
-                  class="location-input"
-                />
-                <div class="budject-input">
-                  <input
-                    type="numbers"
-                    placeholder="Budget*"
-                    class="budget-input"
-                  />
+              <form
+                action="#"
+                onsubmit="submit"
+                method="post"
+                class="formSubmit"
+              >
+                <div class="input-field">
                   <input
                     type="text"
-                    placeholder="Subject*"
-                    class="subject-input"
+                    placeholder="Name*"
+                    class="name-input"
+                    name="name"
                   />
                 </div>
-                <input
-                  type="text"
-                  placeholder="Message"
-                  class="message-input"
-                />
-
+                <div class="email-field">
+                  <input
+                    type="email"
+                    placeholder="Email*"
+                    class="email-input"
+                    name="email"
+                  />
+                </div>
+                <div class="location-field">
+                  <input
+                    type="text"
+                    placeholder="Location*"
+                    class="location-input"
+                    name="location"
+                  />
+                </div>
+                <div class="budject-input">
+                  <div class="budget-field">
+                    <input
+                      type="numbers"
+                      placeholder="Budget*"
+                      class="budget-input"
+                      name="budget"
+                    />
+                  </div>
+                  <div class="subject-field">
+                    <input
+                      type="text"
+                      placeholder="Subject*"
+                      class="subject-input"
+                      name="subject"
+                    />
+                  </div>
+                </div>
+                <div class="message-field">
+                  <input
+                    type="text"
+                    placeholder="Message"
+                    class="message-input"
+                    name="message"
+                  />
+                </div>
                 <button class="hello-btn submit-btn">
                   Submit
                   <i class="fa-solid fa-circle-arrow-right"></i>
@@ -641,5 +736,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
